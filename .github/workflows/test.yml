@@ -1,12 +1,14 @@
-name: my first github actions script
+name: My First GitHub Action
+
 on:
-    push:
+  push:
+    branches:
+      - main
+
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            -name: run tests
-            -run: ls -lrth
+  first-job:
+    runs-on: ubuntu-latest
 
-
-
+    steps:
+      - name: Print hello message
+        run: echo "Hello! My first GitHub Action is running 🎉"
