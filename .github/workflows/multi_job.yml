@@ -1,16 +1,19 @@
-name: mutli_job
+name: 03 - Multi Job Workflow
+
 on:
-    push:
-        branches:
-            -main
+  push:
+    branches:
+      - main
+
 jobs:
-    build-job:
+  build-job:
     runs-on: ubuntu-latest
     steps:
       - name: Build step
         run: echo "Building the application..."
-    test-job:
+
+  test-job:
     runs-on: ubuntu-latest
     steps:
       - name: Test step
-        run: echo "Running tests..." 
+        run: echo "Running tests..."
