@@ -17,3 +17,10 @@ jobs:
     steps:
       - name: Test step
         run: echo "Running tests..."
+        
+        
+        
+        
+#Multiple jobs
+#Jobs run in parallel by default
+#Independent execution
