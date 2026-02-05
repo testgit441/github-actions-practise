@@ -2,7 +2,6 @@ name: my first github actions script
 on:
     push:
 jobs:
-    name: test
     build:
         runs-on: ubuntu-latest
         steps:
