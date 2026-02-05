@@ -12,4 +12,6 @@ jobs:
     steps:
       - name: Print hello message
         run: echo "Hello! My first GitHub Action is running 🎉"
+      - name: Run a command
+        run: ls -lrth
  
