@@ -1,0 +1,35 @@
+name: 03 - Job Dependency Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build application
+        run: echo "Build completed"
+
+  test:
+    # This job runs ONLY after build job succeeds
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test application
+        run: echo "Tests passed"
+
+  deploy:
+    # Deploy runs only after test job
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy application
+        run: echo "Deployment successful"
+
+########## about this file ##############
+#🧠 Learned concepts
+#needs keyword
+#Sequential job execution
+#CI → CD flow
