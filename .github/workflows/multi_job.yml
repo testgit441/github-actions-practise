@@ -1,4 +1,4 @@
-name: 03 - Multi Job Workflow
+name: 02 - Multi Job Workflow
 
 on:
   push:
