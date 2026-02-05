@@ -5,10 +5,10 @@ on:
             -main
 jobs:
     build-job:
-        runs-on: ubuntu-latest
-        steps:
-         - name: Build step
-            run: echo "Building the application..."
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build step
+        run: echo "Building the application..."
     test-job:
     runs-on: ubuntu-latest
     steps:
