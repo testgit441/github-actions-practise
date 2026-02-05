@@ -12,9 +12,4 @@ jobs:
     steps:
       - name: Print hello message
         run: echo "Hello! My first GitHub Action is running 🎉"
-jobs:
-    second-job:
-     runs-on: ubuntu-latest
-     steps:
-        -name: list
-         run: ls -lrth  
+ 
